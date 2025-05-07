@@ -1,15 +1,14 @@
 {
   // Problem 1:
 
-  function formatString(input: string, toUpper: boolean = true): string {
-    return toUpper ? input.toUpperCase() : input.toLowerCase();
+  function formatString(input: string, toUpper?: boolean): string {
+    if (toUpper === undefined || toUpper === true) {
+      return input.toUpperCase();
+    } else {
+      return input.toLowerCase();
+    }
   }
 
-  console.log(formatString("Hello")); // Output: "HELLO"
-  formatString("Hello", true); // Output: "HELLO"
-  console.log(formatString("Hello", false)); // Output: "hello"
-
-  console.log(formatString("Tanvir can do it", false));
 
   ///probpem-2
 
@@ -28,7 +27,7 @@
     { title: "Book C", rating: 5.0 },
   ];
 
-  console.log(filterByRating(books));
+
 
   //// problem-3
 
@@ -114,25 +113,21 @@
     }
   }
 
- 
+  //problem-8
 
+  async function squareAsync(n: number): Promise<number> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (n < 0) {
+          reject(new Error("Number must be non-negative"));
+        } else {
+          resolve(n * n);
+        }
+      }, 1000);
+    });
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
