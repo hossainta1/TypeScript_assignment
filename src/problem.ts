@@ -36,65 +36,66 @@
     return ([] as T[]).concat(...arrays);
   }
 
+  /// problem-4
 
-/// problem-4
- 
-class Vehicle {
-  private make: string;
-  private year: number;
+  class Vehicle {
+    private make: string;
+    private year: number;
 
-  constructor(make: string, year: number) {
-    this.make = make;
-    this.year = year;
-  }
-  getInfo(): string {
-    return `Make: ${this.make}, Year: ${this.year}`;
-  }
-}
-
-// Car Class (Extends Vehicle)
-class Car extends Vehicle {
-  private model: string;
-
-  constructor(make: string, year: number, model: string) {
-    super(make, year);
-    this.model = model;
+    constructor(make: string, year: number) {
+      this.make = make;
+      this.year = year;
+    }
+    getInfo(): string {
+      return `Make: ${this.make}, Year: ${this.year}`;
+    }
   }
 
-  getModel(): string {
-    return `Model: ${this.model}`;
+  // Car Class (Extends Vehicle)
+  class Car extends Vehicle {
+    private model: string;
+
+    constructor(make: string, year: number, model: string) {
+      super(make, year);
+      this.model = model;
+    }
+
+    getModel(): string {
+      return `Model: ${this.model}`;
+    }
   }
-}
 
-
-// problem-5
-function processValue(value: string | number): number {
-  if (typeof value === "string") {
-    return value.length; 
-  } else {
-    return value * 2;
+  // problem-5
+  function processValue(value: string | number): number {
+    if (typeof value === "string") {
+      return value.length;
+    } else {
+      return value * 2;
+    }
   }
-}
 
-// problem-6
+  // problem-6
+  interface Product {
+    name: string;
+    price: number;
+  }
+
+  function getMostExpensiveProduct(products: Product[]): Product | null {
+    if (products.length === 0) 
+    return null;
+
+    return products.reduce((max, product) =>
+      product.price > max.price ? product : max
+    );
+  }
+
+  const products = [
+    { name: "Pen", price: 10 },
+    { name: "Notebook", price: 25 },
+    { name: "Bag", price: 50 },
+  ];
 
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // problem-7
 
 }
