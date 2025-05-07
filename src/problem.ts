@@ -81,8 +81,7 @@
   }
 
   function getMostExpensiveProduct(products: Product[]): Product | null {
-    if (products.length === 0) 
-    return null;
+    if (products.length === 0) return null;
 
     return products.reduce((max, product) =>
       product.price > max.price ? product : max
@@ -95,7 +94,48 @@
     { name: "Bag", price: 50 },
   ];
 
-
   // problem-7
+
+  enum Day {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday,
+  }
+
+  function getDayType(day: Day): string {
+    if (day === Day.Saturday || day === Day.Sunday) {
+      return "Weekend";
+    } else {
+      return "Weekday";
+    }
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
