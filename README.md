@@ -53,13 +53,11 @@ Static typing provides better support for code refactoring, wchich bost confidan
 
 In summary, TypeScript improves code quality and project maintainability by:
 
-- ✅ **Preventing runtime errors through static typing.**
-- 📖 **Making code easier to read and understand with explicit type annotations.**
-- 🔧 **Making refactoring safer and more manageable.**
-- 🤝 **Improving collaboration among developers.**
-- 🧠 **Reducing the cognitive load of understanding code.**
-- 💡 **Enhancing IDE support with better autocompletion and error detection.**
-- 🚀 **Allowing early adoption of modern JavaScript features.**
+- **Preventing runtime errors through static typing.**
+- **Making code easier to read and understand.**
+- **Making refactoring safer.**
+- **Improving collaboration among developers.**
+- **Allowing early adoption of modern JavaScript features.**
 """
 
 
