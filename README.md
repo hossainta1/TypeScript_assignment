@@ -12,10 +12,10 @@ TypeScript is an open-source programming language developed and maintained by Mi
 
 ## Benefits of Static Typing
 
-### ✅ Type Safety
+### Type Safety
 Developers can avoid type-related mistakes at runtime by defining the data types of variables, arguments, and return values using static typing.
 
-**Example:**
+**Example:TypeScript catches type mismatches during development.**
 
 ```ts
 function greet(name: string): string {
@@ -49,7 +49,7 @@ const user: User = {
 Static typing provides better support for code refactoring, wchich bost confidance to developer changinf in the code base and error ditection.
 
 
-## 📌 Summary: How TypeScript Improves Code Quality and Project Maintainability
+## Summary: How TypeScript Improves Code Quality and Project Maintainability
 
 In summary, TypeScript improves code quality and project maintainability by:
 
@@ -59,6 +59,30 @@ In summary, TypeScript improves code quality and project maintainability by:
 - **Improving collaboration among developers.**
 - **Allowing early adoption of modern JavaScript features.**
 """
+
+
+
+
+# 🧩 Differences Between Interfaces and Types in TypeScript
+
+In TypeScript both `interface` and `type` are powerful tools used to define the the structure of data. Both give reasult similar but they have unique features and use cases that make them different.
+
+## What is an Interface?
+An `interface` in TypeScript is used to define the structure of an object.
+**Example:**
+```ts
+interface User {
+  id: number;
+  name: string;
+}
+
+const user: User = {
+  id: 1,
+  name: "Alice"
+};
+```
+
+🏷️ What is a Type Alias?
 
 
 
