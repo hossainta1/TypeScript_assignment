@@ -1,5 +1,5 @@
 {
-  // Problem 1:
+  
 
   function formatString(input: string, toUpper?: boolean): string {
     if (toUpper === undefined || toUpper === true) {
@@ -10,7 +10,8 @@
   }
 
 
-  ///probpem-2
+
+
 
   type Item = {
     title: string;
@@ -21,21 +22,16 @@
     return items.filter((item) => item.rating >= 4);
   }
 
-  const books = [
-    { title: "Book A", rating: 4.5 },
-    { title: "Book B", rating: 3.2 },
-    { title: "Book C", rating: 5.0 },
-  ];
+ 
 
 
-
-  //// problem-3
 
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     return ([] as T[]).concat(...arrays);
   }
 
-  /// problem-4
+  
+
 
   class Vehicle {
     private make: string;
@@ -50,7 +46,6 @@
     }
   }
 
-  // Car Class (Extends Vehicle)
   class Car extends Vehicle {
     private model: string;
 
@@ -64,7 +59,9 @@
     }
   }
 
-  // problem-5
+
+  
+  
   function processValue(value: string | number): number {
     if (typeof value === "string") {
       return value.length;
@@ -73,7 +70,9 @@
     }
   }
 
-  // problem-6
+
+
+ 
   interface Product {
     name: string;
     price: number;
@@ -87,13 +86,9 @@
     );
   }
 
-  const products = [
-    { name: "Pen", price: 10 },
-    { name: "Notebook", price: 25 },
-    { name: "Bag", price: 50 },
-  ];
+ 
 
-  // problem-7
+  
 
   enum Day {
     Monday,
@@ -113,7 +108,10 @@
     }
   }
 
-  //problem-8
+
+
+
+  
 
   async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
