@@ -98,4 +98,46 @@ const item: Product = {
 - **Interface Better for defining object models on the other hand type batter for complex or union types**.
 
 
+# What is the use of the keyof keyword in TypeScript?
+keyof keyword is used to recive the keys of a given type as a union of string literal types.
+
+### KeyOf uses 
+Its ensure safe type and ensure only accessing valid property names.
+
+**Example:**
+```ts
+type User = {
+  id: number;
+  name: string;
+  email: string;
+};
+
+// `keyof User` will be "id" | "name" | "email"
+type UserKeys = keyof User;
+
+let key: UserKeys;
+
+key = "name";   // OK for declear right type
+key = "email";  //OK for declear right type
+key = "age";    // Error: Type '"age"' is not assignable to type '"id" | "name" | "email"'
+
+```
+
+Another thing is we can use keyof in generic functions for safely access object properties
+
+**Example**
+```ts
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+
+const user: User = { id: 1, name: "Tanvir", email: "tanvir@example.com" };
+
+const userName = getProperty(user, "name"); // Returns "Tanvir"
+
+```
+
+
+
+
 
