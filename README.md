@@ -25,9 +25,11 @@ function greet(name: string): string {
 greet("Alice");   // ✅ OK
 greet(123);       // ❌ Error: Argument of type 'number' is not assignable to parameter of type 'string'.
 
+```
 ### Code Readability:
-TypeScript makes code more readable and self-documenting due to defining type. Help define what type of Value expected.
+TypeScript makes code more readable and self-documenting. This is easy to  comprehension and easy to developed.
 
+```ts
 type User = {
   id: number;
   username: string;
@@ -40,3 +42,5 @@ const user: User = {
   isAdmin: false,
 };
 
+
+```
