@@ -63,7 +63,7 @@ In summary, TypeScript improves code quality and project maintainability by:
 
 
 
-# 🧩 Differences Between Interfaces and Types in TypeScript
+# Differences Between Interfaces and Types in TypeScript
 
 In TypeScript both `interface` and `type` are powerful tools used to define the the structure of data. Both give reasult similar but they have unique features and use cases that make them different.
 
@@ -82,7 +82,22 @@ const user: User = {
 };
 ```
 
-🏷️ What is a Type Alias?
+## What is a Type Alias?
+Type alias more suitable beacause its define object shapes as well as unions, intersections, tuples.
+```ts
+type Product = {
+  id: number;
+  price: number;
+};
+
+const item: Product = {
+  id: 101,
+  price: 29.99
+};
+```
+### Key Differences Between interface and type
+- **interface Can extend other interfaces as well as type Can extend interfaces and types**.
+- **Interface Better for defining object models on the other hand type batter for complex or union types**.
 
 
 
