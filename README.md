@@ -125,7 +125,7 @@ key = "age";    // Error: Type '"age"' is not assignable to type '"id" | "name" 
 
 Another thing is we can use keyof in generic functions for safely access object properties
 
-**Example**
+**Example:**
 ```ts
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
