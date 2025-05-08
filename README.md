@@ -15,13 +15,15 @@ TypeScript is an open-source programming language developed and maintained by Mi
 ### ✅ Type Safety
 Developers can avoid type-related mistakes at runtime by defining the data types of variables, arguments, and return values using static typing.
 
-Example: TypeScript catches type mismatches during development.
+**Example:**
+
+```ts
 function greet(name: string): string {
-return `Hello, ${name}!`;
+  return `Hello, ${name}!`;
 }
 
-        greet("Alice");       // ✅ OK
-        greet(123);           // ❌ Error: Argument of type 'number' is not assignable to parameter of type 'string'.
+greet("Alice");   // ✅ OK
+greet(123);       // ❌ Error: Argument of type 'number' is not assignable to parameter of type 'string'.
 
 ### Code Readability:
 TypeScript makes code more readable and self-documenting due to defining type. Help define what type of Value expected.
