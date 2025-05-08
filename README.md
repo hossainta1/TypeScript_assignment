@@ -22,8 +22,8 @@ function greet(name: string): string {
   return `Hello, ${name}!`;
 }
 
-greet("Alice");   // ✅ OK
-greet(123);       // ❌ Error: Argument of type 'number' is not assignable to parameter of type 'string'.
+greet("Alice");   // OK
+greet(123);       //Error: Argument of type 'number' is not assignable to parameter of type 'string'.
 
 ```
 ### Code Readability:
