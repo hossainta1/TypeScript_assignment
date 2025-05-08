@@ -49,9 +49,7 @@ const user: User = {
 Static typing provides better support for code refactoring, wchich bost confidance to developer changinf in the code base and error ditection.
 
 
-## Summary: How TypeScript Improves Code Quality and Project Maintainability
-
-In summary, TypeScript improves code quality and project maintainability by:
+### Summary: How TypeScript Improves Code Quality and Project Maintainability
 
 - **Preventing runtime errors through static typing.**
 - **Making code easier to read and understand.**
