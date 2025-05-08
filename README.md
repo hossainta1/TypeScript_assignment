@@ -6,7 +6,7 @@ Scaling and maintaining code can be difficult for software development. Maintain
 
 TypeScript provide powerful solution to improve code maintainability and scalability through static typing.
 
-### What is TypeScript?**
+### What is TypeScript?
 
 TypeScript is an open-source programming language developed and maintained by Microsoft. As well as it is the superset of JavaScript that adds static typing to the language, llowing developers to catch errors at compile-time rather than runtime.
 
