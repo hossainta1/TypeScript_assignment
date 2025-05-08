@@ -3,7 +3,7 @@
 
 Scaling and maintaining code can be difficult for software development. Maintaining an organised, comprehensible, and scalable codebase becomes very important when developers collaborate on projects with several team members.
 
-How TypeScript enhances code maintainability and scalability with Static Typing?
+**How TypeScript enhances code maintainability and scalability with Static Typing?**
 
 TypeScript provide powerful solution to improve code maintainability and scalability through static typing.
 
