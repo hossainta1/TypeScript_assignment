@@ -56,7 +56,7 @@ Static typing provides better support for code refactoring, wchich bost confidan
 - **Making refactoring safer.**
 - **Improving collaboration among developers.**
 - **Allowing early adoption of modern JavaScript features.**
-"""
+
 
 
 
