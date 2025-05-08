@@ -1,4 +1,5 @@
-**How does TypeScript improve code maintainability and scalability?**.
+
+## How does TypeScript improve code maintainability and scalability?
 
 Scaling and maintaining code can be difficult for software development. Maintaining an organised, comprehensible, and scalable codebase becomes very important when developers collaborate on projects with several team members.
 
